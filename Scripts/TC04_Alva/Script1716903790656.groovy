@@ -17,3 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+autoit_prj = 'C:\\Users\\Ichsan\\Documents\\Lightshot\\alva.exe'
+
+Runtime.getRuntime().exec(autoit_prj)
+
+Thread.sleep(3000)
+
+WebUI.navigateToUrl('https://frontend-uat.ilectraev.com/')
+
+WebUI.verifyElementPresent(findTestObject('ALVA/alva'), 0)
+
